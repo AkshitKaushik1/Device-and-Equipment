@@ -188,7 +188,7 @@ public class AddPipelinePage extends BasePage{
 	            System.out.println("lable is detected");
 	            ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", scroll);
 	            //scroll.sendKeys(Keys.PAGE_DOWN);
-	            System.out.println("scroll is executed successfully");
+	            System.out.println("scroll is executed successfully1");
 	            
 	            Thread.sleep(waittime);
 	           
