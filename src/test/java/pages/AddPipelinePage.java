@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.github.javafaker.Faker;
+
 import util.Log;
 
 public class AddPipelinePage extends BasePage{
@@ -21,7 +23,7 @@ public class AddPipelinePage extends BasePage{
 	 /**
 	    * Variables
 	    */
-	String pipelineName="NewPipeline1";
+	
 	int waittime=3000;
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	Actions a = new Actions(driver);
@@ -126,7 +128,7 @@ public class AddPipelinePage extends BasePage{
 	    */
 	 	   
 	   //Enter the pipeline details and create a pipeline
-	   public PipelinePage createPipeline() throws InterruptedException {
+	   public PipelinePage createPipeline(String pipelineName) throws InterruptedException {
 	       Log.info("Create Pipeline with details");
 	       
 	       try {
@@ -277,23 +279,13 @@ public class AddPipelinePage extends BasePage{
 	            Thread.sleep(waittime);
 	            click(saveButton);
 	            Thread.sleep(waittime);
-	            
 	            click(submitButton);          
-	            
-	                      
-	            
-	            
-	            
-	            
-	            
+	           	            
 	 	       return new PipelinePage(driver);
-	       
-	       
-	       
-	       
-	       
-	       
+	    
 	   }
+	   
+	 
 	
 	
 }

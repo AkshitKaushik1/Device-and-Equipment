@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-21T15:07:52 IST" name="Default suite" finished-at="2022-07-21T15:11:16 IST" duration-ms="204006">
+  <suite started-at="2022-07-29T11:47:33 IST" name="Default suite" finished-at="2022-07-29T11:50:59 IST" duration-ms="206060">
     <groups>
     </groups>
-    <test started-at="2022-07-21T15:07:52 IST" name="Default test" finished-at="2022-07-21T15:11:16 IST" duration-ms="204006">
+    <test started-at="2022-07-29T11:47:33 IST" name="Default test" finished-at="2022-07-29T11:50:59 IST" duration-ms="206060">
       <class name="tests.PipelineTests">
-        <test-method is-config="true" signature="classLevelSetup()[pri:0, instance:tests.PipelineTests@59474f18]" started-at="2022-07-21T15:07:52 IST" name="classLevelSetup" finished-at="2022-07-21T15:07:55 IST" duration-ms="2977" status="PASS">
+        <test-method is-config="true" signature="classLevelSetup()[pri:0, instance:tests.PipelineTests@639c2c1d]" started-at="2022-07-29T11:47:33 IST" name="classLevelSetup" finished-at="2022-07-29T11:47:35 IST" duration-ms="2247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classLevelSetup -->
-        <test-method is-config="true" signature="methodLevelSetup()[pri:0, instance:tests.PipelineTests@59474f18]" started-at="2022-07-21T15:07:55 IST" name="methodLevelSetup" finished-at="2022-07-21T15:07:55 IST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="methodLevelSetup()[pri:0, instance:tests.PipelineTests@639c2c1d]" started-at="2022-07-29T11:47:35 IST" name="methodLevelSetup" finished-at="2022-07-29T11:47:35 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLevelSetup -->
-        <test-method signature="CreatePipeline(java.lang.reflect.Method)[pri:0, instance:tests.PipelineTests@59474f18]" started-at="2022-07-21T15:07:55 IST" name="CreatePipeline" description="Create a Pipeline" finished-at="2022-07-21T15:11:16 IST" duration-ms="200568" status="PASS">
+        <test-method signature="CreatePipeline(java.lang.reflect.Method)[pri:0, instance:tests.PipelineTests@639c2c1d]" started-at="2022-07-29T11:47:35 IST" name="CreatePipeline" description="Create a Pipeline" finished-at="2022-07-29T11:50:58 IST" duration-ms="203484" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreatePipeline -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.PipelineTests@59474f18]" started-at="2022-07-21T15:11:16 IST" name="teardown" finished-at="2022-07-21T15:11:16 IST" duration-ms="366" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.PipelineTests@639c2c1d]" started-at="2022-07-29T11:50:58 IST" name="teardown" finished-at="2022-07-29T11:50:59 IST" duration-ms="262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
