@@ -6,12 +6,19 @@ import java.lang.reflect.Method;
 
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
+
 
 public class PipelineTests extends BaseTest{
 	@Test(priority = 0, description = "Create a Pipeline")
     public void CreatePipeline(Method method) throws InterruptedException {
         //ExtentReports Description
-        startTest(method.getName(), "Create a Pipeline");
+		Faker faker = new Faker();
+		String randompipelinename=faker.lorem().characters(3);
+		String pipelineName="Pipeline"+randompipelinename;
+		System.out.println(pipelineName);
+		
+       startTest(method.getName(), "Create a Pipeline");
         loginPage
         	.openClarityApp()
         	.logintoClarity("shaniaenergies", "1111");
@@ -29,7 +36,10 @@ public class PipelineTests extends BaseTest{
         	.addPipeline();
        Thread.sleep(5000);
        addpipelinePage
-       		.createPipeline();
+       		.createPipeline(pipelineName);
+       pipelinePage
+       		.verifypipeline(pipelineName);
+       
         
     }
 }
