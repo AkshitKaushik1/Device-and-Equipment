@@ -19,7 +19,8 @@ public class AssetsPage extends BasePage {
      * Web Elements
      */
 	By pipeline			=By.xpath("//*[@id=\"id_assets-list_piplines\"]");
-    
+    By Devices          =By.xpath("//*[@id=\"id_assets-list_devices\"]");
+    By Equipment        =By.xpath("//*[@id=\"id_assets-list_equipment\"]");
   //Click on Pipeline
     public PipelinePage goToPipeline() {
         Log.info("Navigating to Pipeline");
@@ -34,5 +35,37 @@ public class AssetsPage extends BasePage {
         
         //click(pipeline);
         return new PipelinePage(driver);
+
     }
+    
+    public DevicesPage goToDevices () {
+        Log.info("Navigating to Devices");
+        
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable (Devices)).click();
+            System.out.println("Devices Tab is clickable");
+          }
+     catch(TimeoutException e) {
+            System.out.println("Devices Tab isn't clickable");
+         }
+        
+        //click(pipeline);
+        return new DevicesPage(driver);
+    }
+    public EquipmentPage goToEquipment () {
+        Log.info("Navigating to Equipment");
+        
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable (Equipment)).click();
+            System.out.println("Equipment Tab is clickable");
+          }
+     catch(TimeoutException e) {
+            System.out.println("Devices Tab isn't clickable");
+         }
+        
+        //click(pipeline);
+        return new EquipmentPage(driver);
+    }
+    
 }
+

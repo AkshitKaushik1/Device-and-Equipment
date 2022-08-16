@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-29T11:47:33 IST" name="Default suite" finished-at="2022-07-29T11:50:59 IST" duration-ms="206060">
+  <suite started-at="2022-08-16T15:24:32 IST" name="Default suite" finished-at="2022-08-16T15:27:03 IST" duration-ms="151506">
     <groups>
     </groups>
-    <test started-at="2022-07-29T11:47:33 IST" name="Default test" finished-at="2022-07-29T11:50:59 IST" duration-ms="206060">
-      <class name="tests.PipelineTests">
-        <test-method is-config="true" signature="classLevelSetup()[pri:0, instance:tests.PipelineTests@639c2c1d]" started-at="2022-07-29T11:47:33 IST" name="classLevelSetup" finished-at="2022-07-29T11:47:35 IST" duration-ms="2247" status="PASS">
+    <test started-at="2022-08-16T15:24:32 IST" name="Default test" finished-at="2022-08-16T15:27:03 IST" duration-ms="151506">
+      <class name="tests.EditEquipmentTest">
+        <test-method is-config="true" signature="classLevelSetup()[pri:0, instance:tests.EditEquipmentTest@a530d0a]" started-at="2022-08-16T15:24:32 IST" name="classLevelSetup" finished-at="2022-08-16T15:24:35 IST" duration-ms="3418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classLevelSetup -->
-        <test-method is-config="true" signature="methodLevelSetup()[pri:0, instance:tests.PipelineTests@639c2c1d]" started-at="2022-07-29T11:47:35 IST" name="methodLevelSetup" finished-at="2022-07-29T11:47:35 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="methodLevelSetup()[pri:0, instance:tests.EditEquipmentTest@a530d0a]" started-at="2022-08-16T15:24:35 IST" name="methodLevelSetup" finished-at="2022-08-16T15:24:35 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodLevelSetup -->
-        <test-method signature="CreatePipeline(java.lang.reflect.Method)[pri:0, instance:tests.PipelineTests@639c2c1d]" started-at="2022-07-29T11:47:35 IST" name="CreatePipeline" description="Create a Pipeline" finished-at="2022-07-29T11:50:58 IST" duration-ms="203484" status="PASS">
+        <test-method signature="EditEquipment(java.lang.reflect.Method)[pri:0, instance:tests.EditEquipmentTest@a530d0a]" started-at="2022-08-16T15:24:35 IST" name="EditEquipment" description=" Edit Equipment" finished-at="2022-08-16T15:27:03 IST" duration-ms="148001" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.PipelineTests.CreatePipeline(java.lang.reflect.Method) throws java.lang.InterruptedException]]>
+                <![CDATA[public void tests.EditEquipmentTest.EditEquipment(java.lang.reflect.Method) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreatePipeline -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.PipelineTests@639c2c1d]" started-at="2022-07-29T11:50:58 IST" name="teardown" finished-at="2022-07-29T11:50:59 IST" duration-ms="262" status="PASS">
+        </test-method> <!-- EditEquipment -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.EditEquipmentTest@a530d0a]" started-at="2022-08-16T15:27:03 IST" name="teardown" finished-at="2022-08-16T15:27:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- tests.PipelineTests -->
+      </class> <!-- tests.EditEquipmentTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
