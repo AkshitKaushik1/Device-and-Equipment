@@ -15,11 +15,13 @@ import pages.AddEquipmentPage;
 import pages.AddPipelinePage;
 import pages.AssetsPage;
 import pages.DevicesPage;
+import pages.EditDevicesPage;
 import pages.EditEquipmentPage;
 import pages.EquipmentPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.PipelinePage;
+import pages.WorkforcePage;
 import util.Log;
 
 public class BaseTest {
@@ -34,6 +36,8 @@ public class BaseTest {
     public AddEquipmentPage addEquipment;
     public AddPipelinePage addpipelinePage;
     public EditEquipmentPage editEquipmentPage ;
+    public EditDevicesPage editDevicesPage;
+    public WorkforcePage workForcepage;
     public WebDriverWait wait;
     public WebDriver getDriver() {
         return driver;
@@ -41,7 +45,7 @@ public class BaseTest {
     @BeforeClass
     public void classLevelSetup() {
         Log.info("Tests is starting!");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\akshi\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\akshi\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
         ChromeOptions option=new ChromeOptions();
         option.setPageLoadStrategy(PageLoadStrategy.NONE);
         option.addArguments("--disable-notifications");
@@ -61,6 +65,8 @@ public class BaseTest {
         addEquipment = new AddEquipmentPage(driver);
         equipmentPage = new EquipmentPage(driver);
         editEquipmentPage = new EditEquipmentPage(driver);
+        editDevicesPage = new EditDevicesPage(driver);
+        workForcepage = new WorkforcePage(driver);		
         wait = new WebDriverWait(driver,Duration.ofSeconds(20));
        }
     @AfterClass
